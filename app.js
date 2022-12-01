@@ -4,6 +4,8 @@ const app = express()
 const PORT = 3000
 
 const path = require('path')
+app.use(express.json())
+app.use(express.static('public'))
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.get('/**', (req, res) => {

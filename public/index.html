@@ -18,15 +18,16 @@
     <div class="container">
       <h1>
         מלאו פרטים <br />
-        וקבלו ייעוץ <br />
-        ! והכוונה, חינם
+        וקבלו הצעה <br />
+        ! משתלמת, חינם
       </h1>
       <form action="" onsubmit="sendEmail(event)">
-        <input class="fullname" type="text" placeholder="שם מלא" />
-        <input class="phone" type="text" placeholder="טלפון / נייד" />
+        <input required class="fullname" type="text" placeholder="שם מלא" />
+        <input required class="phone" type="text" placeholder="טלפון / נייד" />
         <input
+          required
           class="company"
-          type="text"
+          type="email"
           placeholder="? באיזה חברה את/ה נמצא/ת כיום"
         />
         <button type="submit">שלח</button>

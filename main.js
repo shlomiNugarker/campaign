@@ -5,6 +5,7 @@ function sendEmail(ev) {
   const nameEl = document.querySelector('.fullname')
   const phoneEl = document.querySelector('.phone')
   const companyEl = document.querySelector('.company')
+  const sentEl = document.querySelector('.sent')
 
   Email.send({
     SecureToken: '09e66569-b94f-4417-af01-f841cdce0054',
@@ -17,5 +18,7 @@ function sendEmail(ev) {
     nameEl.value = ''
     phoneEl.value = ''
     companyEl.value = ''
+
+    sentEl.innerText = '🙂 ! נשלח'
   })
 }

@@ -74,6 +74,10 @@ h2 {
   background-color: rgba(23, 25, 25, 0.288);
 }
 
+.sent {
+  font-size: 20px;
+}
+
 @media (max-width: 380px) {
   body {
   }

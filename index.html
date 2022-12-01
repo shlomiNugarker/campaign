@@ -10,10 +10,6 @@
     <title>title</title>
   </head>
   <body>
-    <!-- <form action="">
-      <input type="button" value="send email" onclick="sendEmail()" />
-    </form> -->
-
     <h2>
       ? משלמים הון <br />
       לספק הטלוויזיה שלכם
@@ -25,10 +21,14 @@
         וקבלו ייעוץ <br />
         ! והכוונה, חינם
       </h1>
-      <form action="" onsubmit="">
-        <input type="text" placeholder="שם מלא" />
-        <input type="text" placeholder="טלפון / נייד" />
-        <input type="text" placeholder="? באיזה חברה את/ה נמצא/ת כיום" />
+      <form action="" onsubmit="sendEmail(event)">
+        <input class="fullname" type="text" placeholder="שם מלא" />
+        <input class="phone" type="text" placeholder="טלפון / נייד" />
+        <input
+          class="company"
+          type="text"
+          placeholder="? באיזה חברה את/ה נמצא/ת כיום"
+        />
         <button type="submit">שלח</button>
       </form>
     </div>
